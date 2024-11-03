@@ -128,7 +128,7 @@ main {
 
 /* Footer */
 footer {
-    background-color: #006d77;
+    background-color: #005a60;
     color: #ffffff;
     text-align: center;
     padding: 20px;
@@ -138,6 +138,7 @@ footer {
     align-items: center;
     width: 100%;
 }
+
 
 footer p {
     margin: 5px 0;
