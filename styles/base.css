@@ -1,7 +1,5 @@
 /* Fonts */
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto Mono', 'Inconsolata', sans-serif;
 }
@@ -53,7 +51,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #000000;
+    color: #222222;
     transform: scale(1.1);
     background-color: #ffffff;
 }
@@ -91,7 +89,7 @@ main {
 
 .card p {
     font-size: 1rem;
-    color: #666666;
+    color: #333333;
     line-height: 1.6;
     margin-bottom: 15px;
 }
