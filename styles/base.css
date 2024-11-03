@@ -40,7 +40,8 @@ nav {
 
 /* nav bar */
 nav a {
-    color: #ffffff;
+    background-color: #F5F5F5;
+    color: #003366;
     text-decoration: none;
     font-weight: bold;
     padding: 5px 10px;
@@ -129,7 +130,7 @@ main {
 /* Footer */
 footer {
     background-color: #004d4d;
-    color: #ffffff;
+    color: #00ffff;
     text-align: center;
     padding: 20px;
     font-size: 0.9rem;
@@ -142,12 +143,12 @@ footer {
 
 footer p {
     margin: 5px 0;
+    color: #00ffff;
 }
-
 
 span#currentyear,
 p#lastModified {
-    color: #ffffff;
+    color: #00ffff;
 }
 
 /* phone */
