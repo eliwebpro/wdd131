@@ -1,6 +1,4 @@
-/* Base CSS styles */
-
-/* Fonts and General Reset */
+/* Fonts */
 * {
     margin: 0;
     padding: 0;
@@ -11,18 +9,15 @@
 body {
     line-height: 1.6;
     color: #212121;
-    /* Dark Grey for text */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     background-color: #F5F5F5;
-    /* Light Grey */
 }
 
 /* Header */
 header {
     background-color: #006d77;
-    /* Purple */
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -59,7 +54,6 @@ nav a {
 
 nav a:hover {
     color: black;
-    /* White */
     transform: scale(1.1);
     background-color: #edf6f9;
 }
@@ -68,76 +62,56 @@ nav a:hover {
 main {
     flex: 1;
     display: flex;
-    /* Mude para flexbox */
     flex-wrap: wrap;
-    /* Permite que os itens se movam para a próxima linha se não houver espaço */
     justify-content: space-between;
-    /* Espaça as seções uniformemente */
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 10px;
     gap: 20px;
-    /* Espaçamento entre as seções */
 }
 
 /* card */
 .card {
     background-color: #FFFFFF;
-    /* White */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     flex: 1;
-    /* Permite que cada card cresça igualmente */
     min-width: 300px;
-    /* Largura mínima para as seções */
     margin: 10px;
-    /* Margem entre os cards */
 }
 
 
 .card h2 {
     font-size: 1.5rem;
     color: #212121;
-    /* Dark Grey for heading */
     margin-bottom: 10px;
 }
 
 .card p {
     font-size: 1rem;
     color: #666;
-    /* Grey */
     line-height: 1.6;
     margin-bottom: 15px;
 }
 
 .about-content {
     display: grid;
-    /* Manter a grade para o conteúdo da seção "About Me" */
     grid-template-columns: 1fr auto;
-    /* Primeira coluna para imagem, segunda para texto */
     gap: 20px;
-    /* Espaço entre colunas */
     align-items: center;
-    /* Centraliza itens verticalmente */
 }
 
 .profile-image {
     max-width: 150px;
-    /* Set a max-width for the image */
     height: auto;
-    /* Maintain the aspect ratio */
     border-radius: 10px;
-    /* Optional: add rounded corners */
 }
 
-/* Optional: If you want to limit the width of the text */
 .about-content p {
     flex: 1;
-    /* Allow the paragraph to take up remaining space */
     max-width: 600px;
-    /* Limit the maximum width of the paragraph */
 }
 
 @media (min-width: 800px) {
@@ -157,7 +131,6 @@ main {
 /* Footer */
 footer {
     background-color: #006d77;
-    /* Dark Purple */
     color: #fff;
     text-align: center;
     padding: 20px;
