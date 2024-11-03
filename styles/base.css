@@ -103,7 +103,7 @@ main {
     align-items: center;
 }
 
-.profile-image {
+.image {
     max-width: 150px;
     height: auto;
     border-radius: 10px;
