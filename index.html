@@ -4,42 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Dynamic Web Fundamentals - Eliezio </title>
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals, Eliezio M da Silva, Web development resources, About Me, and contact information.">
+    <meta name="author" content="Eliezio Marques da Silva">
+    <title>WDD 131 - Dynamic Web Fundamentals - Eliezio</title>
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Tangerine:wght@400;700&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Tangerine:wght@400;700&display=swap');
-    </style>
-
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100..700&family=Tangerine:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
     <script src="scripts/getdates.js" defer></script>
-
-    <link rel="stylesheet" href="base.css">
 </head>
 
 <body>
 
     <header>
-        <h1>Welcome to My Dynamic Web Fundamentals Page</h1>
+        <h1>WDD 131 - Dynamic Web Fundamentals - Eliezio M da Silva</h1>
 
         <nav>
-            <a href="https://linkedin.com" target="_blank">linkedin</a>
-            I-Leran
-            Scripture
-            Final Project
+            <a href="https://www.linkedin.com/in/eliezio-silva" target="_blank">LinkedIn</a>
+            <a href="https://byui.instructure.com/courses/320378" target="_blank">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/12?lang=eng"
+                target="_blank">Scripture</a>
+            <a href="soon" target="_blank">Project</a>
         </nav>
     </header>
 
     <main>
-        <section class="card"></section>
+        <section class="card about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptatum hic magnam repudiandae
+                    vitae sint praesentium maxime, illum fuga, rem, animi quidem beatae omnis. Velit dignissimos placeat
+                    deserunt odio. Dignissimos?</p>
+                <img src="images/eliezio.jpg" alt="Eliezio M da Silva" class="profile-image">
+            </div>
+        </section>
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+                <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+                <li><a href="https://css-tricks.com/" target="_blank">CSS-Tricks</a></li>
+            </ul>
+        </section>
         <section class="images"></section>
     </main>
 
     <footer>
         <p>&copy; <span id="currentyear"></span> Eliezio - Utah, USA</p>
         <p id="lastModified">Last Modified: </p>
-
     </footer>
-
 
 </body>
 
