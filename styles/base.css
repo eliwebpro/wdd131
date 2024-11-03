@@ -128,7 +128,7 @@ main {
 
 /* Footer */
 footer {
-    background-color: #005a60;
+    background-color: #004d4d;
     color: #ffffff;
     text-align: center;
     padding: 20px;
@@ -142,6 +142,12 @@ footer {
 
 footer p {
     margin: 5px 0;
+}
+
+
+span#currentyear,
+p#lastModified {
+    color: #ffffff;
 }
 
 /* phone */
