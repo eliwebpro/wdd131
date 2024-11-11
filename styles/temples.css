@@ -27,9 +27,10 @@ h1 {
 	transition: opacity 0.3s ease;
 }
 h2 {
-text-align: center;
-padding: 20px;
+	text-align: center;
+	padding: 20px;
 }
+
 /* Classe que oculta o h1 */
 .hidden {
 	opacity: 0;
@@ -52,21 +53,18 @@ padding: 20px;
 
 /* Ícone de hambúrguer e seta */
 #menu::before {
-	content: "≡"; /* Ícone de hambúrguer */
+	content: "≡";
 	display: inline-block;
 }
 
 #menu.show::before {
-	content: "⬆️"; /* Ícone de seta */
-    text-align: le;
-    
+	content: "⬆️";
 }
 
 /* Ajustes para o estado ativo do menu */
 #menu.show {
 	width: 100%;
 }
-
 
 /* Esconde os itens do menu por padrão na visualização móvel */
 .navigation li {
@@ -119,28 +117,34 @@ padding: 20px;
 	}
 }
 
-/* Estilos para o grid com duas colunas a partir de 40em */
+/* Estilos para o grid com duas colunas */
 .temples {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-    gap: 16px;
-    padding: 16px;
+	display: grid;
+	gap: 16px;
+	padding: 16px;
+}
+
+/* Ajuste de grid para telas maiores */
+@media only screen and (min-width: 40em) {
+	.temples {
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	}
 }
 
 figure {
-    margin: 0;
-    border: 1px solid #fff;
-    border-radius: 8px;
-    overflow: hidden;
+	margin: 0;
+	border: 1px solid #fff;
+	border-radius: 8px;
+	overflow: hidden;
 }
 
 img {
-    width: 100%;
-    height: auto;
+	width: 100%;
+	height: auto;
 }
 
 figcaption {
-    text-align: center;
-    padding: 8px;
-    background-color: #f5f5f5;
+	text-align: center;
+	padding: 8px;
+	background-color: #f5f5f5;
 }
