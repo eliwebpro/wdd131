@@ -86,7 +86,7 @@ h2 {
 .navigation a:hover, .navigation a:active {
 	color: white;
 	background-color: #448ddb;
-	scale: 1.05;
+	transform: scale(1.05);
 	border-radius: 5px;
 }
 
