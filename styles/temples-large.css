@@ -1,0 +1,21 @@
+/* temples-large.css */
+@media (min-width: 768px) {
+    nav {
+        justify-content: space-between;
+    }
+
+    .temples {
+        display: grid; /* Definindo o contêiner como grid */
+        grid-template-columns: repeat(3, 1fr); /* 3 colunas de tamanho igual */
+        gap: 2rem; /* Espaço entre as figuras */
+    }
+
+    figure {
+        margin-top: 2rem; /* Se necessário, ajuste o espaçamento entre as figuras */
+    }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+    .temples {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    }
+}

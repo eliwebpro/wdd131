@@ -1,0 +1,146 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: Roboto, sans-serif;
+}
+
+/* Header Estilo */
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #2aa5f7;
+	padding: 1rem;
+	color: white;
+	position: relative;
+}
+
+/* Estilos para o Título */
+h1 {
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: white;
+	margin-right: 1rem;
+	transition: opacity 0.3s ease;
+}
+h2 {
+text-align: center;
+padding: 20px;
+}
+/* Classe que oculta o h1 */
+.hidden {
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.3s ease;
+}
+
+/* Menu Mobile */
+#menu {
+	display: inline-block;
+	font-size: 2rem;
+	font-weight: 700;
+	text-decoration: none;
+	padding: 0.5rem;
+	cursor: pointer;
+	text-align: right;
+	width: 100%;
+	transition: width 0.3s ease;
+}
+
+/* Ícone de hambúrguer e seta */
+#menu::before {
+	content: "≡"; /* Ícone de hambúrguer */
+	display: inline-block;
+}
+
+#menu.show::before {
+	content: "⬆️"; /* Ícone de seta */
+    text-align: le;
+    
+}
+
+/* Ajustes para o estado ativo do menu */
+#menu.show {
+	width: 100%;
+}
+
+
+/* Esconde os itens do menu por padrão na visualização móvel */
+.navigation li {
+	display: none;
+}
+
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: #eee;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+/* Efeito de hover */
+.navigation a:hover, .navigation a:active {
+	color: white;
+	background-color: #448ddb;
+	scale: 1.05;
+	border-radius: 5px;
+}
+
+/* Exibe os itens em blocos quando o menu está ativo */
+.show li {
+	display: block;
+	width: 100%;
+}
+
+/* Estilos para telas maiores */
+@media only screen and (min-width: 40em) {
+	#menu {
+		display: none; /* Esconde o botão de menu na visualização desktop */
+	}
+
+	/* Configura o layout horizontal */
+	.navigation {
+		display: flex;
+	}
+
+	.navigation li {
+		display: block;
+		flex: 1;
+	}
+
+	.navigation a {
+		text-align: center;
+	}
+}
+
+/* Estilos para o grid com duas colunas a partir de 40em */
+.temples {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 16px;
+    padding: 16px;
+}
+
+figure {
+    margin: 0;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    text-align: center;
+    padding: 8px;
+    background-color: #f5f5f5;
+}
