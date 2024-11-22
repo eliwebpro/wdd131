@@ -3,7 +3,7 @@
     --primary-color: #51bd7b;
     --secondary-color: #FFCC29;
     --text-color: #0c0c0d;
-    --overlay-bg: #ffffffb3; /* Fundo branco transparente */
+    --overlay-bg: #ffffffb3; 
     --second-bg:#f1f1f1;
     --color-blue:#0c0c0d;
 }
@@ -16,31 +16,31 @@ body {
     background-color: var(--background-color);
     display: flex;
     flex-direction: column;
-    min-height: 100vh;  /* Garante que o corpo ocupe toda a altura da tela */
+    min-height: 100vh;  
     margin: 0;
 }
 main {
-    flex: 1;            /* Faz o main ocupar o espaço restante, empurrando o footer para o final */
+    flex: 1;           
 }
 
 h1 {
-    position: absolute;          /* Fixa o h1 no topo da tela */
-    top: 0;                    /* Alinha o topo do h1 com o topo da tela */
+    position: absolute;          
+    top: 0;                    
     left: 0;   
-    right: 0;                /* Alinha o h1 à esquerda */
+    right: 0;               
     color: var(--color-blue);
     background-color: var(--primary-color);
     font-size: 2.5rem;
     text-align: center;
-    padding: 1rem 0;           /* Espaçamento interno acima e abaixo do texto */
+    padding: 1rem 0;           
     margin: 0;
-    z-index: 2;                /* Garante que o h1 fique acima do restante do conteúdo */
+    z-index: 2;                
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(18, 1fr); /* 4 colunas iguais */
-    grid-template-rows: repeat(8, 1fr);    /* 4 linhas iguais */
+    grid-template-columns: repeat(18, 1fr); 
+    grid-template-rows: repeat(8, 1fr);    
     height: auto;
     width: auto;                         
 }
@@ -78,7 +78,7 @@ h1 {
     background-color: var(--second-bg); 
     padding: 1rem;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.6);  /* Cor branca com 50% de opacidade */
+    background-color: rgba(255, 255, 255, 0.6);  
     padding: 1rem;
     border-radius: 10px;
     height: auto;
@@ -92,12 +92,12 @@ h1 {
     text-align: center;
     height: auto;
 }
-.emoji {
-    grid-column: 17 / 18;
-    grid-row: 6;
-    z-index: 3;
-    
+.weather::after {
+    content: "⛅";
+    font-size: 2rem; 
+  
 }
+
 h2 {
     color: var(--primary-color);
     background-color: rgb(255, 204, 41, 0.5);
@@ -151,6 +151,9 @@ footer {
 @media (max-width: 768px) {
     .hero {
         display: none;
+    }
+    .weather::after {
+        content: none; 
     }
 
     .grid-container {
@@ -209,9 +212,10 @@ footer {
         padding-bottom: 10px;
         text-align: center;
     }
-    .emoji{
-        display: none;
-    }
+    
+    
+
+    
     .weather {
         background-color: var(--second-bg);
         text-align: center;
