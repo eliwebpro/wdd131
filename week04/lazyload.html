@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Eliezio M da Silva, Web development resources, Lazy Load Exemple.">
+        <meta name="author" content="Eliezio Marques da Silva">
+        <title>Lazy Load Exemple</title>
+        
+        <link rel="stylesheet" href="styles/lazyload.css">
+        
+        <script src="scripts/lazy.js" defer></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <header>
+        <h1>Lazy Load</h1>
+    </header>
+    <main>
+        <section class="images">
+            <figure>
+                <img src="images/fortaleza-brazil-temple-5569-main.jpg" alt="Fortaleza Brazil Temple" loading="lazy" width="400px" height="600px">
+            </figure>
+            <figure>
+                <img src="images/curitiba-brazil-temple-1078-main.jpg" alt="Curitiba Brazil Temple" loading="lazy" width="400px" height="600px">
+            </figure>
+            <figure>
+                <img src="images/017-São-Paulo-Brazil-Temple.jpg" alt="São Paulo Brazil Temple" loading="lazy" width="400px" height="600px">
+            </figure>
+            <figure>
+                <img src="images/138-Manaus-Brazil-Temple.jpg" alt="Manaus Brazil Temple" loading="lazy" width="400px" height="600px">
+            </figure>
+            <figure>
+                <img src="images/brasilia-brazil-temple-39184-main.jpg" alt="Brasilia Brazil Temple" loading="lazy" width="400px" height="600px">
+            </figure>
+            <figure>
+                <img src="images/campinas-brazil-temple-6012-main.jpg" alt="Campinas Brazil Temple" loading="lazy" width="400px" height="600px">
+            </figure>
+        </section>
+            
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Eliezio - Utah, USA</p>
+        <p id="lastModified">Last Modified: </p>
+    </footer>
+</body>
+</html>
