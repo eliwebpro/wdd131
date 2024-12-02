@@ -22,7 +22,18 @@ menuButton.addEventListener('click', () => {
 });
 
 
+function updateView(titleText, filteredTemples) {
+  const title = document.querySelector("main h2");
+  title.textContent = titleText;
 
+  const nav = document.querySelector("nav");
+  const menuButton = document.getElementById("menu");
+  if (menuButton.classList.contains("show")) {
+    nav.classList.add("show");
+  }
+
+  displayTemples(filteredTemples);
+}
 
 
 const temples = [
@@ -149,49 +160,33 @@ displayTemples(temples);
 
 
 document.getElementById("home").addEventListener("click", () => {
-  const title = document.querySelector("main h2");
-  title.textContent = "Home";
-  displayTemples(temples);
-})
+  updateView("Home", temples);
+});
 
-document.getElementById('old').addEventListener('click', () => {
-  const title = document.querySelector('.navigation');
+document.getElementById("old").addEventListener("click", () => {
   const oldTemples = temples.filter(temple => {
-    const year = parseInt(temple.dedicated.split(',')[0].trim());
+    const year = parseInt(temple.dedicated.split(",")[0].trim());
     return year < 1900;
   });
-  title.innerHTML = 'Old'
-  displayTemples(oldTemples)
-})
+  updateView("Old", oldTemples);
+});
 
-document.getElementById('new').addEventListener('click', () => {
-  const title = document.querySelector('.navigation');
+document.getElementById("new").addEventListener("click", () => {
   const newTemples = temples.filter(temple => {
-    const year = parseInt(temple.dedicated.split(',')[0].trim());
+    const year = parseInt(temple.dedicated.split(",")[0].trim());
     return year > 2000;
   });
-  title.innerHTML = 'New'
-  displayTemples(newTemples)
-})
+  updateView("New", newTemples);
+});
 
-document.getElementById('large').addEventListener('click', () => {
-  const title = document.querySelector('.navigation');
-  const largeTemples = temples.filter(temple => {
-    const area = temple.area;
-    return area > 90000;
-  });
-  title.innerHTML = 'Large'
-  displayTemples(largeTemples)
-})
+document.getElementById("large").addEventListener("click", () => {
+  const largeTemples = temples.filter(temple => temple.area > 90000);
+  updateView("Large", largeTemples);
+});
 
-document.getElementById('small').addEventListener('click', () => {
-  const title = document.querySelector('.navigation');
-  const smallTemples = temples.filter(temple => {
-    const area = temple.area;
-    return area < 10000;
-  });
-  title.innerHTML = 'Small'
-  displayTemples(smallTemples)
-})
+document.getElementById("small").addEventListener("click", () => {
+  const smallTemples = temples.filter(temple => temple.area < 10000);
+  updateView("Small", smallTemples);
+});
 
 
