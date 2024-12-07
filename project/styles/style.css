@@ -92,16 +92,15 @@ header nav a:hover {
 }
 
 .colored {
-    background-color: #f4c542; /* Primary color from your palette */
-    color: #010101; /* Contrast text color */
-    font-size: 1.1rem; /* Slightly larger font size for emphasis */
-    padding: 10px; /* Adds space around the text */
-    border-radius: 5px; /* Rounds the edges */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
-    line-height: 1.6; /* Improves readability */
+    background-color: #f4c542; 
+    color: #010101; 
+    font-size: 1.1rem;
+    padding: 10px; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    line-height: 1.6; 
 }
 
-/* Mobile Styles */
 @media (max-width: 768px) {
     header nav a {
         font-size: 1rem;
