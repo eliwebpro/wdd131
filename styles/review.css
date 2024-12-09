@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+   
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 150px;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    color: #007bff;
+    margin: 0;
+  }
+  
+  main {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px;
+  }
+  
+  main p {
+    margin: 15px 0;
+    font-size: 1.5rem;
+    color: #555555;
+  }
+  
+  #review-count {
+    font-weight: bold;
+    color: #1ddd3d;
+  }
+  
+  footer{
+	text-align: center;
+	background-color: #82c8f7;
+	color: #111111;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    font: 1em sans-serif;
+    font-weight: bold;
+}
+ 
+    
+  
+  @media (max-width: 768px) {
+    main {
+      padding: 15px;
+    }
+  
+    header h1 {
+      font-size: 1.8rem;
+    }
+  
+    main p {
+      font-size: 0.9rem;
+    }
+  }
+  
